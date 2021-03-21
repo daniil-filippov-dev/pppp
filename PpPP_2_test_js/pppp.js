@@ -22,7 +22,7 @@ let startProgram =  function () {
 }
 
 
-alert(main(0, 4, 0, 3, 0, 2));
+
 
 function main(a, b, c, d, e, f) {
 	let result = '';
@@ -107,7 +107,7 @@ function main(a, b, c, d, e, f) {
 		let k, n;
 		k = -c / d;
 		n = f / d;
-		result = `1 ${k} ${n}`;
+		result = `1 ${k} ${n}`; 
 	} else {
 		result = "Are you kidding me?";
 	}
