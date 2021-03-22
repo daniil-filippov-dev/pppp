@@ -12,8 +12,14 @@ describe("Решения системы (a*x+b*y=e)&&(c*x+d*y=f)", function() {
 			assert.equal(main(0, 0, 0, 0, 1/2, 3/2), '0');
 			assert.equal(main(0, 0, 0, 0, 9, 5), '0');
 		});
-		it(``, function(){
-			assert.equal(main(2, 0, 4, 0, 0, 4), '0');
+		it(`a*d = c*b`, function(){
+			assert.equal(main(1, 2, 1, 2, 0, 2), '0');
+			assert.equal(main(3, 1, 2, 2/3, 0, 8), '0');
+		});
+		it(`a = b = c = d отлично от 0`, function() {
+			assert.equal(main(2, 2, 2, 2, 6, 8), '0');
+			assert.equal(main(2.3, 2.3, 2.3, 2.3, 0, 8), '0');
+			assert.equal(main(1/9, 1/9, 1/9, 1/9, 6/20, 8/40), '0');
 		});
 	});
 	
