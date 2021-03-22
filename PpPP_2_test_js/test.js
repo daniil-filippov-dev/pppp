@@ -104,10 +104,4 @@ describe("Решения системы (a*x+b*y=e)&&(c*x+d*y=f)", function() {
 			assert.equal(main({}, {}, {}, {}, {}, {}), "Are you kidding me?");
 		});
 	});
-	
-	
-	
-	
-	
-	
 });
